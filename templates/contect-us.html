@@ -260,14 +260,16 @@
         const reason = document.getElementById("the-reason").value;
         const message = document.getElementById("the-message").value;
         const checkbox = document.getElementById("check").checked ? "Yes" : "No";
+	const web = "raja-ahirwar-porfolio.vercel.app";
 
         // Create the email body
         const emailBody = `
             Name: ${name}<br>
             Email: ${email}<br>
             Phone: ${phone}<br>
-            Subject: ${reason}<br>
+            Reason: ${reason}<br>
             Message: ${message}<br>
+	    From: ${web}<br>
             Checkbox: ${checkbox}
         `;
 
